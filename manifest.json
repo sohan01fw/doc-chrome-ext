@@ -1,9 +1,19 @@
 {
   "manifest_version": 3,
-  "name": "React Chrome Extension",
+  "name": "Your Extension Name",
   "version": "1.0",
-  "description": "A Chrome extension built with React and Bun.",
+  "description": "Your extension description",
+  "permissions": ["sidePanel"],
   "action": {
-    "default_popup": "index.html"
+    "default_icon": {
+      "16": "public/vite.svg"
+    }
+  },
+  "side_panel": {
+    "default_path": "index.html"
+  },
+  "host_permissions": ["http://*/*", "https://*/*"],
+  "background": {
+    "service_worker": "background.ts"
   }
 }
