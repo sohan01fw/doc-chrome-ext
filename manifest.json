@@ -3,7 +3,7 @@
   "name": "Your Extension Name",
   "version": "1.0",
   "description": "Your extension description",
-  "permissions": ["sidePanel"],
+  "permissions": ["sidePanel", "storage"],
   "action": {
     "default_icon": {
       "16": "public/vite.svg"
@@ -14,6 +14,6 @@
   },
   "host_permissions": ["http://*/*", "https://*/*"],
   "background": {
-    "service_worker": "background.ts"
+    "service_worker": "src/background.ts"
   }
 }
